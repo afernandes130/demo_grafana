@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Working_git\\Workspace-Estudos\\TrabalhoFIAP_Grafana\\TestAppMetrics\\TestAppMetrics\\TestAppMetrics.csproj": {}
+  },
+  "projects": {
+    "D:\\Working_git\\Workspace-Estudos\\TrabalhoFIAP_Grafana\\TestAppMetrics\\TestAppMetrics\\TestAppMetrics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Working_git\\Workspace-Estudos\\TrabalhoFIAP_Grafana\\TestAppMetrics\\TestAppMetrics\\TestAppMetrics.csproj",
+        "projectName": "TestAppMetrics",
+        "projectPath": "D:\\Working_git\\Workspace-Estudos\\TrabalhoFIAP_Grafana\\TestAppMetrics\\TestAppMetrics\\TestAppMetrics.csproj",
+        "packagesPath": "C:\\Users\\afern\\.nuget\\packages\\",
+        "outputPath": "D:\\Working_git\\Workspace-Estudos\\TrabalhoFIAP_Grafana\\TestAppMetrics\\TestAppMetrics\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\afern\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/OrbiumLtda/CRM/_packaging/CustomPackages/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/OrbiumLtda/CRM/_packaging/Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "App.Metrics.AspNetCore.All": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "App.Metrics.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "App.Metrics.AspNetCore.Tracking": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "App.Metrics.InfluxDB": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "App.Metrics.Prometheus": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "App.Metrics.Reporting.Http": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
