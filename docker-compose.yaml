@@ -7,6 +7,8 @@ services:
       - .\Prometheus\prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
+    links:
+      - api
   influxdb:
     image: influxdb
     container_name: influxdb
@@ -14,6 +16,8 @@ services:
       - .:/var/lib/influxdb influxdb
     ports:
       - "8086:8086"
+    links:
+      - api
     environment:
       INFLUXDB_DB: "defaultdb"
       INFLUXDB_ADMIN_USER: "admin"
@@ -33,10 +37,9 @@ services:
   api:
     image: app-metrics
     container_name: api
+    build: 
+      context: ./TestAppMetrics/TestAppMetrics
+      dockerfile: Dockerfile
     ports:
       - "5000:5000"
       - "5001:5001"
-    links:
-      - influxdb
-      - prometheus
-      - grafana
